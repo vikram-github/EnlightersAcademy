@@ -141,8 +141,7 @@ ul.icons {
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
-  width: .75em;
-  margin-bottom: 10px;
+  width: .75em;  
 }
 .icon-muted {
   color: #eeeeee;
