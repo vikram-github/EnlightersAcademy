@@ -1,4 +1,4 @@
-@@ -1,255 +0,0 @@
+
 <!DOCTYPE HTML>
 <html>
 <head><meta name="viewport" content="width=device-width"/>
@@ -10,6 +10,78 @@
 <link rel="stylesheet" type="text/css" href="css/skinblue.css"/><!-- Change skin color here -->
 <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 <script src="js/jquery-1.9.0.min.js"></script><!-- scripts are at the bottom of the document -->
+    <style>
+        tr.d0 td {
+  background-color: #FFFFFF;
+  color: black;
+}
+tr.d1 td {
+  background-color: #ADD8E6;
+  color: black;
+}
+        
+        /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    border: #ff003b;
+    color: green !important;
+    border: blue !important;
+    font-size: x-large;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+    </style>
+    <script type="text/javascript">
+        function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    document.getElementById(cityName+"-").style = "background-color: #4CAF50";
+}
+    </script>
 </head>
 <body>
 <!-- TOP LOGO & MENU
@@ -64,7 +136,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Academic Projects </h1>
+				<h1 class="titlehead">BCA/BSc Academic Projects </h1>
 			</div>
 			<div class="c4">
 				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i> Call Us Now +91 90082 67640</h1>
@@ -75,21 +147,467 @@
 <!-- CONTENT
 ================================================== -->
 <div class="grid">
-		<div class="shadowundertop"></div>
-		<div class="row">
-			<div class="c8">
-				<h1 class="maintitle ">
+		<div class=""></div>
+		<div class="">
+			<div class="">
+				<h1 class=" ">
 				</h1>
 				<p>
-					End to end steps from Idea generation, to execution support and training. This not only acts as a booster to your academic career but also helps you to channelise your focus on learning from true experience
+					MCA final year projects from Enlighters Academy. Contact us immediately to block your projects.
+					We provide projects execution steps, demo ppt and documentation.
+				</p>
+				<p style="font-size:x-large;">
+                <div class="tab">
+                  <button class="tablinks" id="JAVA-" onclick="openCity(event, 'JAVA')">JAVA</button>
+                  <button class="tablinks" id=".NET-" onclick="openCity(event, '.NET')">.Net</button>
+                </div>
+                <div id="JAVA" class="tabcontent">
+                    <b>JAVA Projects</b>
+                <table>
+                    <tr class="d1">
+                            <td><b>Title</b></td>
+                            <td><b>Technology</b></td>
+                    </tr>
+                    <tr><td style='color:blue'>Active Source Routing Protocol For Mobile Networks</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Administration of Super Speciality Hospital Activities</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>AdXpress</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Ajax Reader</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Andhra Pradesh State Finance Corporation</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Automated Courier Service</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Automated customer care system</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Automated Sports Club</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Automatic DB Schema Generation</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Broad Walk Dealers</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Bug Tracking System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Bus Scheduling</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Cargo Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Client Server Protocol Implementation</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>College Interacto</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>College Management Tool</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Common Employment System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Company’s Vehicle Management Tool	</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Complaint Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Computer Retail Store and Maintenance</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Computerized Examination Management Tool</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Concurrent Train Simulation</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Congestion Control Using Network Based Protocol</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Consignment Tracking services</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Contract Labor Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Corporate BPO Solution Management</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Corporate Leave Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Corporate Recruitment System (CRS)</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Crime Records Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>CRM For Airline Industry</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Cyber Shopping</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Data Base Interface</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Data Centric Knowledge Management System (DCKMS)</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Data Mart Management Software</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Data Transmission Using Multi-Tasking-Sockets</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>DHL Courier System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Digital Encryption System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Distributed Antiworm System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Distribution Business Automation System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E- Counseling</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E- Music World</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Cargo & Express Couriers</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Compiler</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Error Control System In Network Environment</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Error Tracking System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Shop</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Transaction Interface</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Ewheelz</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>EzHoteCT</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>FAQ-O-MATIC TOOL</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Flow well Automation System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Foresty Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Gate Way Protocol Implementation</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Graphic Media Player</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Graphics Data Visualisation</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Internet Banking</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Inventory Analyzer</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Legitimate Motor Vehicle Finance Processing</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Local Service Center</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Mobility Management Approaches for Mobile IP Networks</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Crime Investigation System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Library Management</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Registration For Voter Card</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Taxicab Service</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Telephone Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Tourism Guide</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Payroll systems</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Pharma Ordering System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Placement Activity System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Preventing Data Methods for Selective Jamming Attacks</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Product Service Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Project Management Information System(PMIS)</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Real Estate Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Re-Ordering Of Packets Using Retransmission Timer</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Resource Pool</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Security System for  DNS Using Cryptography</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Self-Interested  Routing In Online Environment</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Smart Card Health Security System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Stenography Using Image, Audio & Video</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Telecom Connection System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Training Portal Application</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Travel Desk Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>University Admission System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Value Added Sales Tax Information System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Visa Processing Information System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Web Enabled  Books Management Tool</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Web-Based Library</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Examination</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Ezee Mail System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Distributed Database Querying System - DDQS </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Hospital Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Profession Recruitment Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Hospital Health Card Management Tool</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Insurance</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Secure File Saving System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Telecom Business Information System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>eZest</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>File Tracking System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Human  Resource Planner</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Graduate Selection Process</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Global Interactive Solutions</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Global Communication Media</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Transaction Interface</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Fuji Distribution</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Corporate Project Planning</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Medi Tracker</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Mobile Service Provider</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Order Processing System with AJAX Enabled</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Examination</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Auction</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Library</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>3x3i systems</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Bus Transportation & Passenger Travel</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Image Processing</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Mutli Sensor Railway Track Geometry Surveying System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online test simulator</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Add management system</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Advent Executor</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Back to My Village</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Employee Budget Approval System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Chat express</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Cryptography with Audio</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Hotel Nextgen</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Law Firm</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>My Mission City without Crime</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Net pod</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Repository and Search Engine for Alumni of College</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>The Great Mind Challenge</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Train information system</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Airline Booking System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Corporate employee welfare network</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>e Education</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Voting’s</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Agriculture</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Faculty Feedback</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>A Novel Hybrid IP Traceback Scheme</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>A Secure Based Storage System with Secure Data Forwarding</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Automatic Connecting Self Adaptive Contention Aware Routing Protocol for Intermittently Connected Mobile Networks</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Automatic Network Selection in Multi-path Network</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Detecting Intrusions in Multitier Web Applications</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Detecting Spam by Monitoring Outgoing Messages</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Detection of Cut Area in Network</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Detection of cut area wireless sensor networks</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Ensuring Distributed Accountability for Data Sharing</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Finding Packet Droppers and Modifiers in Wireless sensor Networks</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Flexible Approach for Maintaining Common Outsourced Data</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Implementation of a Load Balancer for Server Clusters</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Implementation of Steganography and its Evaluation for Various File Formats</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Improving Utilization of Infrastructure Clouds</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Interconnection of Data-Center Servers Using Dual Server Ports</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Load Balancing Multipath Network Switching System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Modeling and Detection of Worm</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Monitoring and Detecting Abnormal Behavior in Outsource Data</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Organizing user search based on history groups</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Packet Loss Control Using Tokens in Network</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Protecting Location Privacy in Sensor Networks</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Secure computing of Personal Health Records in using Attributes</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Similarity Search on Outsourced Data Assets</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Sketch4match – content-based image retrieval</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Student Credits Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Advanced Google map For even Management System </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Graphical Representation of Sorting Algorithm</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Faculty Feedback</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Voting’s</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>GEO-Spatial Innovation</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Faculty Load Balancing </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Efficient comparison of kmp and boyermoore pattern matching algorithms</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>AES, DES, TRIPL-Des-Encryption Efficiency Analyzer</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Appraisal Tracking System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Blowfish & IDEA </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Students Bus Pass Reservation System </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>DVD-Rental System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Exam branch management</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Home improvement system application</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Coarse Grain Access Control Framework</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Personal Decision Making Assistant</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Music System </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Profile Evolution Technique</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>SPAM mails Filtering </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>String Compression Using Knuth Morris Pratt  </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Trading values of Different Companies </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Web Analytics tool</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Business Directory Search and add Business in your city</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Dues Online Due Date Reminders</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Print Order For stationery Shop </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Health care for you 24x7 medical helpline</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Offers A Marketing Challenge</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Performance Analyzer How is Your Employee Performing</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>RTO management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Shaadi Shopping Online Shopping</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Spare Parts Demand Forecasting System Synopsis</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Video Hub  Video management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Map-Reduction In java</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>All in One Exam Website</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Pattern Matching Algorithms</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Safe And Secure Online Banking</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>College Events Using Bar Card System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Mentors & Proteges Empowering Women</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Cash Xpert ATM Cash Supply Management</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Fighting Hunger </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online student feedback system</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Task Post Management System(Instant workers online)</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online examination on time Session Based </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Department Scheduling System </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Modern kochbuch  (Food Recipes )</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Hybrid-Book Collection Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Find the Nearest E-Blood  Bank using Google Maps </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>An Intelligent Heart Disease Prediction System sing K-Means Clustering and Naïve Bayes Algorithm</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Secure Cloud Computing through Homomorphic Encryption</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Implementation of Cloud Storage System using Multiple Cloud Services</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Improving the efficiency and accuracy of k-means clustering algorithm</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Implementation of Cloud Storage System using Multiple Cloud Services</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Integrating Naive Bayes And K-Means Clustering With Different Initial Centroid Selection Methods In The Diagnosis Of</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Heart Disease Patients</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Medical Enquiry to Find Nearest Medical Shops </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Photo Sharing Web Application</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Fraud Detection In E-Shopping</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online Resume Builder</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Car Parking System using Bar Code Reader</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Employee Attendance Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>E-Shopping & Add Posting</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Student Academic Analysis Results on Graph </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Integrated Knowledge Management System Based Mentoring for new University Staff Development</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>File Transmission  using Rindeal algorithm</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Mentor-Mentee-Program System </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Data Forwarding Securely using Digital Signature Algorithm (DSA)</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Software License Monitoring System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>A New Approach of Cryptographic Technique using RSA</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Secure authentication (typing patterns) in java key stroke dynamic</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Automation of College ID card system</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Game Cart An Online Video Game Selling</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Event Management</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Notown Musical Store</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Academic Department Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>An Improvised Mobile Search Engine Adopting To Users Search Data and Location Statistics</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Auction Management System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Campus Recruitment System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Bookworm-Buying Experience</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Campaigns Synopsis</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>City Life-What’s happening Portal</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Distant Learning-Self paced Education</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Easy Net II-Intranet - Content Management</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Fire & Rescue Efficient Collaboration</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Hire Cab</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Ride Online Bus Ticket Booking System</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Showtime Synopsis</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Storage Space Tracker Synopsis</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Traveler Loyalty</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Image Encryption Using AES</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Medical Decision Making Diagnosis System Integrating k-means and Naïve Bayes algorithms</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Online College Magazine</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Secure Remote Communication using des algorithm</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Simulation of Data Mining Algorithms</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Performance of SHA-1 & H MAC-SHA-1 on De duplication Files</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>A Random Decision Tree Framework for Privacy-Preserving Data Mining</td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>A survey Literature on Cloud Computing Research </td><td>JAVA</td></tr>
+                <tr><td style='color:blue'>Ad Visualization And Performance</td><td>JAVA</td></tr>
 
-				</p>
-				<p style="font-size:large;">
-					We provide: </br></br>
-					<b>>> <u>Latest IEEE projects for final year BE, BTech and MTech Students </u></b></br></br>
-					<b>>> <u>Final year web projects using Java/J2EE, .net for BCA/BSc </u></b></br></br>
-					<b>>> <u>Mini Projects using Android, Java, .net</u></b></br></br>
-				</p>
+                </table>
+                
+                </div>
+                
+                <div id=".NET" class="tabcontent">
+                    <b>.NET Projects</b>
+                <table>
+                    <tr class="d1">
+                            <td><b>Title</b></td>
+                            <td><b>Technology</b></td>
+                    </tr>
+                    <tr><td style='color:blue'>Addiction Recovery</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Advertising Agency</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Advocate Personal Assistant System </td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Air India Support Tool</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Airline Reservation system</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Ap genco Mailing System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Asset Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Automatic E-Card Forwarding</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Automation Of Educational Organization</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Back Ground Verification</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Back To My Village</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Balance Sheet Instructor</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Blood Information System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Bug Tracking system</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Bus Ticket Issue Agency</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Cable Network Management (Cable Gram Network)</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Call Center Management</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Campus Orkut</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Career Guidance Placement Unit</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Chemical Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Citizen Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>City Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>College Info</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Data Secure Encryption System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Digital Library</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Dress Making Automation System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Drug Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E_Former</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Agriculture</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Easy Export</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Banking</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Billing</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Eccentric Network for Intranet</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Certificate</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Efficient Travel Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Grievances</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Learning</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Electrical Database Maintenance</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Electronic Cash Controller</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Electronic Mentoring System For Women</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-match Making</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Employee Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Enquiry For Flights & Trains</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Enterprise Organization Portal</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Enterprise Resource Information System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Enterprise Resource Planning</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Payroll</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Post Office System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Scholarship</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-Shopping</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Essbee Industries</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>E-support Services</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Event Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Explore India</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Expo Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Fin Corp-Cash Controller</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Flaw Tracking System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Franchise Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Geospatial InfoTech Solution</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Go Inventory</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Gram Panchayat Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Greeting Cards-E-wishes</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Hand Written Recognition</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Health Care</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Health Care Management</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Hotel Reservation System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>HRMS Resource Planning</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Image Mosaicing</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Indian Tourism Portal</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Information Portal</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Information Sharing</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Instant Interact</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Insurance Information Management System </td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Insurance Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>International Crops Research Institute For The Semi-Arid Tropics (ICRISAT)</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Intranet Communication</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Inventory Administration Scheme</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Inventory Chain</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>ISO Quality Certification Tool</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>IT Recruitment Process</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Leave Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Life Saver</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Live Meeting Mailing System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Mail Client</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Mail Tracker</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Mediclaim Processing</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Mining Weighted Association Rules Without Pre-Assigned Weights</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Mobile Shoppy</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Multi Banking System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Multi User Contact Manager</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Multiple Database Interface</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>My Party Link</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Net Auction</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Net Banking</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Network Database Junction</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Notepad Editor System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Office Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>ONCMPS Covering Pages</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Accommodation Information System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Air Ticketing System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Auction</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Auction For Customs Products In Sea Ports</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Bidding</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Blood Bank (Blood Camber Services)</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Cd Store</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Diagnostic Station(Symptomatic Labs)</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Evaluation Tool</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Notice Board</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Recruitment Process</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Resume Management</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Selection</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Service Pivot</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Test Center</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Vehicle Tracking</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Online Virtual Classes</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Order Processing Order</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Packers & Movers</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Patron Complaints Resolving System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Placement Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Product Animation</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Project Master Maintenance</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Project Scheduler System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Projects Organizer</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Property 4 Hyderabad</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Pub maintenance system</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Q Browser</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Radical Application Portal</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Reality Event Organization</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Resource Allocation in OFDMA</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>RNS Groups</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>RTA Information System (RTA)</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Secure Data Processing</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Secure Mail Using RSA Algorithm</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Secured Authentication Using Graphical Representation</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Smart Knowledge Provider</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Smarter Transportation</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Social Security Number</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Social Welfare Services</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Societal Informatics</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Soft Solutions</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Software Project Management</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Software Project Organization</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Stock & Portfolio</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Stores Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Student Record System Design</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Students Halt Mart</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Students Marks Processing</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Super Market</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Supply Chain Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Task Tracker Arranger System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Tax Assessment Services</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Tele Communication Services</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Time Based PC Control</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Unique Id Barcode Generation</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Universal Rental Capture</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Vehicle & Health Insurance Policy Premium Calculator</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Vehicle Maintenance & Insurance Policy</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Venture Information System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Warehouse Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Web  Profiling System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Web Enabled Estate</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Web Site Content Management System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Web Tourist Programming System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Web Traffic Analyzer</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Zeepline Reservation  System</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Medical billing and data management</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Mail Access by Image & Video As Password</td><td>.Net</td></tr>
+                    <tr><td style='color:blue'>Crime information transmission using stenography</td><td>.Net</td></tr>
+                    </table>
+                </div>
+                
 				<ul class="icons">
 
 				</ul>
@@ -98,7 +616,7 @@
 				<h1 class="maintitle">
 				</h1>
 				<ul id="skill">
-						<img style="position:relative;bottom:50px;"src="images/project.png"></img>
+						
 				</ul>
 			</div>
 		</div>
@@ -107,58 +625,67 @@
 
 <!-- FOOTER
 ================================================== -->
-<div id="wrapfooter">
-	<div class="grid">
-		<div class="row" id="footer">
-			<!-- to top button  -->
-			<p class="back-top floatright">
-				<a href="#top"><span></span></a>
-			</p>
-			<!-- 1st column -->
-			<!-- 2nd column -->
-			<div class="c3">
-				<h2 class="title"><i class="icon-facebook"></i> Follow us</h2>
-				<hr class="footerstress">www.facebook.com/EnlightersAcademy/</hr>
-
-			</div>
-			<div class="c3">
-				<!--<img src="images/logo-footer.png" style="padding-top: 70px;" alt="">-->
-			</div>
-			<div class="c3">
-				<!--<img src="images/logo-footer.png" style="padding-top: 70px;" alt="">-->
-			</div>
-
-			<!-- 3rd column -->
-			<div class="c3">
-				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
-				<hr class="footerstress">
-				<dl>
-					<dt>Rajarajeshwari Nagar, Bangalore </br> Electronic City, Bangalore</dt>
-					<dd><span>Telephone:</br></span>+91 90082 67640</br>+91 96205 35781</br>+91 98851 23291</dd>
-					<dd>E-mail: <a href="more.html">info@EnlightersAcademy.com</a></dd>
-				</dl>
-				<ul class="social-links" style="margin-top:15px;">
-					<li class="twitter-link smallrightmargin">
-					<a href="#" class="twitter has-tip" target="_blank" title="Follow Us on Twitter">Twitter</a>
-					</li>
-					<li class="facebook-link smallrightmargin">
-					<a href="#" class="facebook has-tip" target="_blank" title="Join us on Facebook">Facebook</a>
-					</li>
-					<li class="google-link smallrightmargin">
-					<a href="#" class="google has-tip" title="Google +" target="_blank">Google</a>
-					</li>
-					<li class="linkedin-link smallrightmargin">
-					<a href="#" class="linkedin has-tip" title="Linkedin" target="_blank">Linkedin</a>
-					</li>
-					<li class="pinterest-link smallrightmargin">
-					<a href="#" class="pinterest has-tip" title="Pinterest" target="_blank">Pinterest</a>
-					</li>
-				</ul>
-			</div>
-			<!-- end 4th column -->
-		</div>
-	</div>
-</div>
+    <div id="wrapfooter">
+        <div class="grid">
+            <div class="row" id="footer">
+                <!-- to top button  -->
+                <p class="back-top floatright">
+                    <a href="#top"><span></span></a>
+                </p>
+                <!-- 1st column -->
+                <div class="c3">
+                    <h2 class="title"><i class="icon-thumbs-up"></i> Follow us</h2>
+                    <hr class="footerstress">
+                    <ul class="social-links" style="margin-top:15px;">
+                        <!--<li class="twitter-link smallrightmargin">
+                            <a href="#" class="twitter has-tip" target="_blank" title="Follow Us on Twitter">Twitter</a>
+                        </li>-->
+                        <li class="facebook-link smallrightmargin">
+                            <a href="https://www.facebook.com/EnlightersAcademy" class="facebook has-tip" target="_blank" title="Join us on Facebook">Facebook</a>
+                        </li>
+                        <li class="google-link smallrightmargin">
+                            <a href="https://plus.google.com/116881923347714396595" class="google has-tip" title="Join us on Google +" target="_blank">Google</a>
+                        </li>
+                        <li class="linkedin-link smallrightmargin">
+                            <a href="https://www.linkedin.com/company/enlighters-academy" class="linkedin has-tip" title="Join us on Linkedin" target="_blank">Linkedin</a>
+                        </li>
+                        <!--<li class="pinterest-link smallrightmargin">
+                            <a href="#" class="pinterest has-tip" title="Pinterest" target="_blank">Pinterest</a>
+                        </li>-->
+                    </ul>
+                </div>
+                <!-- end 1st column -->
+                <!-- 2nd column -->
+                <div class="c3">
+                    <h2 class="title"><i class="icon-phone"></i> Call Us</h2>
+                    <hr class="footerstress">
+                    <dl>
+                        <dd>+91 90082 67640<br />+91 70196 23180</dd>
+                    </dl>
+                </div>
+                <!-- end 2nd column -->
+                <!-- 3rd column -->
+                <div class="c3">
+                    <h2 class="title"><i class="icon-envelope"></i> Mail Us</h2>
+                    <hr class="footerstress">
+                    <dl>
+                        <dd><a href="contact.html">info@EnlightersAcademy.com</a></dd>
+                    </dl>
+                </div>
+                <!-- end 3rd column -->
+                <!-- 4th column -->
+                <div class="c3">
+                    <h2 class="title"><i class="icon-map-marker"></i> Locate Us</h2>
+                    <hr class="footerstress">
+                    <dl>
+                        <dt><a href="https://www.google.co.in/search?q=enlighters+academy&npsic=0&rflfq=1&rlha=0&rllag=12865832,77589631,9390&tbm=lcl&ved=0ahUKEwj_5eL1tJjXAhXKvI8KHZR4CjIQtgMIKQ&tbs=lrf:!2m1!1e3!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:4484164166794609777;mv:!1m3!1d49430.97437243688!2d77.5896316!3d12.86583215!2m3!1f0!2f0!3f0!3m2!1i477!2i305!4f13.1" target="_blank"> Rajarajeshwari Nagar, Bengaluru</a></dt>
+                        <dt><a href="https://www.google.co.in/search?tbm=lcl&ei=6SP3Wa-yHIzhvASJtJLgAQ&q=enlighters+academy&oq=enlighters+academy&gs_l=psy-ab.3...0.0.0.167448.0.0.0.0.0.0.0.0..0.0....0...1..64.psy-ab..0.0.0....0._MG3GWY_udI#rlfi=hd:;si:7166778768124754002;mv:!1m3!1d49430.97437243688!2d77.5896316!3d12.86583215!2m3!1f0!2f0!3f0!3m2!1i477!2i305!4f13.1" target="_blank"> Electronic City, Bengaluru</a></dt>
+                    </dl>
+                </div>
+                <!-- end 4th column -->
+            </div>
+        </div>
+    </div>
 <!-- copyright area -->
 <div class="copyright">
 	<div class="grid">
@@ -254,5 +781,8 @@ $(document).ready(function() {
 	}) //end click
 });
 </script>
+<script>
+openCity(event, 'JAVA');
+</script>
 </body>
-</html> 
+</html> 
