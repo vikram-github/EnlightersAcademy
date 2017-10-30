@@ -20,7 +20,7 @@ if (!$comment) $errors[count($errors)] = 'Please enter your comment.';
 if (!$errors) {
 
 	//recipient - replace your email here
-	$to = 'enlightersacademy@gmail.com';	
+	$to = 'info@EnlightersAcademy.com';	
 	//sender - from the form
 	$from = $name . ' <' . $email . '>';
 	
